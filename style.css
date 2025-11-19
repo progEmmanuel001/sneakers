@@ -210,10 +210,213 @@ header img{
 }
 
     /* Very smaller screens (mobile-devices) */
-    @media (max-width:750px){
+    @media (max-width:779px){
       .hamburger{display:flex;}
       header{padding:10px 12px;}
       .pc{
         display: none;
       }
     }
+
+/* page responsive */
+    @media (max-width:1150px){
+.right{
+    position: absolute;
+    right: 0;
+    background-color: black;
+    width: 43%;
+    height: 100%;
+}
+.right div{
+     font-size: 90px;
+  color: transparent;              /* Makes the inside transparent */
+  -webkit-text-stroke: 2px white;  /* Outline width & color */
+  text-align: center;
+  transform:rotate(-90deg); 
+  position: absolute;
+  right: -70px;
+  bottom: 200px;
+  font-family: serif ;
+}
+/* sneaker */
+.right span{
+    width: 700px;
+    position: absolute;
+    bottom: 70px;
+    left: -300px;
+     transform:rotate(-20deg); 
+}
+.right img{
+    width: 100%;
+    height: 100%;
+}
+.pc a{
+  margin-left: 70px;
+}
+    }
+/* 1000px */
+    @media (max-width:1000px){
+.right{
+    position: absolute;
+    right: 0;
+    background-color: black;
+    width: 44%;
+    height: 100%;
+}
+
+/* sneaker */
+.right span{
+    width: 700px;
+    position: absolute;
+    bottom: 70px;
+    left: -230px;
+     transform:rotate(-20deg); 
+}
+.right img{
+    width: 100%;
+    height: 100%;
+}
+    }
+  
+/* 903px */
+    @media (max-width:1150px){
+.pc a{
+  margin-left: 60px;
+}
+    }
+
+    @media (max-width:860px) {
+      .pc a{
+        margin-left: 40px;
+      }
+.left{
+  font-size: 24px;
+ z-index: -1;
+   position: absolute;
+    left: 0;
+    background-color: purple;
+    width: 60%;
+    height: 100%;
+   padding-top: 200px;
+    text-align: center;
+}
+.left .div{
+    position: absolute;
+    margin: 50px 0px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+}
+    }
+
+/* 721px */
+    @media (max-width:721px){
+
+.right div{
+     font-size: 80px;
+  color: transparent;              /* Makes the inside transparent */
+  -webkit-text-stroke: 2px white;  /* Outline width & color */
+  text-align: center;
+  transform:rotate(-75deg); 
+  position: absolute;
+  right: -70px;
+  bottom: 200px;
+  font-family: serif ;
+}
+/* sneaker */
+.right span{
+    width: 600px;
+    position: absolute;
+    bottom: 70px;
+    left: -200px;
+     transform:rotate(-20deg); 
+}
+.left{
+  font-size: 25px;
+ z-index: -1;
+   position: absolute;
+    left: 0;
+    background-color: purple;
+    width: 60%;
+    height: 100%;
+   padding-top: 100px;
+    text-align: center;
+}
+.left .div{
+    position: absolute;
+    margin: 50px 0px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+}
+    }
+
+/* 598px */
+   @media (max-width:598px){
+.container{
+    background-color: white;
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    display: block;
+}
+.right{
+  position: static;
+    background-color: black;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    animation-name: bgcolor;
+    animation-duration: 8s ;
+    animation-iteration-count: infinite;
+}
+@keyframes bgcolor {
+    0%{background-color: black;}
+     20%{background-color: rgb(14, 221, 14);}
+     40%{background-color: cyan;}
+      60%{background-color: orangered;}
+       80%{background-color: purple;}
+        100%{background-color: gold;}
+}
+
+.right div{
+     font-size: 80px;
+  color: transparent;              /* Makes the inside transparent */
+  -webkit-text-stroke: 2px white;  /* Outline width & color */
+  text-align: center;
+  transform:rotate(-75deg); 
+  position: absolute;
+  right: -70px;
+  bottom: 200px;
+  font-family: serif ;
+}
+/* sneaker */
+.right span{
+    width: 600px;
+    position: absolute;
+    bottom: 70px;
+    left: -200px;
+     transform:rotate(-20deg); 
+}
+.left{
+  position: relative;
+  font-size: 25px;
+ z-index: 0;
+    background-color: purple;
+    width: 100%;
+    height: 50%;
+   padding-top: 30px;
+    text-align: center;
+}
+.left .div{
+    position: absolute;
+    margin: 50px 0px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+}
+    }
+
+    
