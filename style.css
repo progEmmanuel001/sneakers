@@ -87,7 +87,7 @@ header img{
  z-index: -1;
    position: absolute;
     left: 0;
-    background-color: purple;
+     background-image: linear-gradient(to left, purple, black);
     width: 60%;
     height: 100%;
    padding-top: 200px;
@@ -364,40 +364,38 @@ header img{
 }
 .right{
   position: static;
-    background-color: black;
+    background-image: linear-gradient( to right, purple, black);
     width: 100%;
     height: 50%;
     z-index: 1;
-    animation-name: bgcolor;
-    animation-duration: 8s ;
+    animation-name: bcolor;
+    animation-duration: 3s ;
     animation-iteration-count: infinite;
 }
-@keyframes bgcolor {
-    0%{background-color: black;}
-     20%{background-color: rgb(14, 221, 14);}
-     40%{background-color: cyan;}
-      60%{background-color: orangered;}
-       80%{background-color: purple;}
-        100%{background-color: gold;}
+@keyframes bcolor {
+    0%{  background-image: linear-gradient(to right, purple, black);}
+     25%{  background-image: linear-gradient(to top, purple, black);}
+     50%{  background-image: linear-gradient(to left, purple, black);}
+      75%{  background-image: linear-gradient(to bottom, purple, black);}
 }
 
 .right div{
-     font-size: 80px;
+     font-size: 60px;
   color: transparent;              /* Makes the inside transparent */
   -webkit-text-stroke: 2px white;  /* Outline width & color */
   text-align: center;
-  transform:rotate(-75deg); 
+  transform:rotate(-45deg); 
   position: absolute;
-  right: -70px;
-  bottom: 200px;
+  right: -130px;
+ top: 20%;
   font-family: serif ;
 }
 /* sneaker */
 .right span{
     width: 600px;
     position: absolute;
-    bottom: 70px;
-    left: -200px;
+    bottom: 50%;
+    left: -100px;
      transform:rotate(-20deg); 
 }
 .left{
@@ -416,6 +414,13 @@ header img{
     left: 20px;
     font-size: 30px;
     color: white;
+}
+
+@keyframes textcolor {
+    0%{-webkit-text-stroke: 2px black;}
+     40%{-webkit-text-stroke: 2px cyan;}
+       80%{-webkit-text-stroke: 2px rgba(34, 27, 34, 0.856);}
+        100%{-webkit-text-stroke: 2px gold;}
 }
     }
 
