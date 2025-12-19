@@ -37,7 +37,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
-    padding: 70px 10%;
+    padding: 70px 05%;
 }
 
 .contact-info-card, .contact-form-card {
